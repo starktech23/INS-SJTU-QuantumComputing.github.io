@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computation Research (Institute of Natural Science, Shanghai Jiaotong University)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff; /* General text color */
+            background-image: url('qcombk11.jpg'); /* Ensure this is the path to your subdued background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed; /* Keeps the background fixed during scrolling */
+        }
+        header, footer, section {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 50, 0.8); /* Slight dark background for all sections */
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #ccddff; /* Lighter shade of blue for headers */
+        }
+        p, li {
+            color: #ccddff; /* Light greyish-blue color for paragraph text  #e6e6ff*/
+            line-height: 1.6;
+        }
+        .navigation {
+            background-color: #004080; /* Dark blue background for navigation */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navigation a {
+            color: #ccdfff; /* Lighter text for navigation links */
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navigation a:hover {
+            background-color: #003366; /* #003366*/
+        }
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .columns div {
+            flex: 1;
+            min-width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #fff;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="#about">About Us</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#team">Team</a>
+    </div>
+    <header>
+        <h1>Quantum Computation Research (Institute of Natural Science, Shanghai Jiaotong University)</h1>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Quantum computing, an emerging technology, leverages the principles of quantum mechanics to achieve unprecedented computational power. 
+            Our primary research focus is on quantum simulations of partial differential equations (PDEs), encompassing both linear and nonlinear scenarios, through a process known as <strong><span style="color: red;">"Schrödingerization"</span></strong>,
+            which transforms any linear ordinary and partial differential equations with non-unitary dynamics into a system  characterized by unitary dynamics, via a warped phase transition that maps the equations into a higher  dimension, making them suitable for quantum simulation. Additionally, this approach is particularly well-suited for continuous variables, making it an idea -- so far the only possible one -- for the analog quantum simulation of PDEs and ODEs.
+        </p>
+    </section>
+    <section id="research">
+        <h2>Our Research</h2>
+        <div class="columns">
+            <div>
+                <h3>A general framwork of Quantum algorithms via Schrödingerisation</h3>
+                <p>We develop a general framework for quantum algorithms applied to linear dynamical systems with inhomogeneous terms through Schrödingerization[ <a href="https://arxiv.org/abs/2212.13969">4</a>,<a href="https://ins.sjtu.edu.cn/people/shijin/PS/PRA-JLY.pdf">5</a> ]. Our study systematically addresses the critical issue of recovering the original variables from the Schrödingerized equations, both theoretically and numerically, even in cases where the evolution operator includes unstable modes.
+                <h3>Quantum simulations for linear Partial Differential Equations (PDE)</h3>
+                <p>We develop quantum algorithms specifically tailored to tackle a diverse range of PDEs, including open quantum systems within bounded domains with non-unitary artificial boundary conditions, problems entailing physical boundary or interface conditions, Maxwell's equations, the Fokker-Planck equation, ill-posed scenarios such as the backward heat equations, etc.
+                <h3>Quantum circuit</h3>
+                <p> We provide an explicit implementation of the corresponding quantum circuit designed to solve general PDEs using Schrödingerization techniques.</p>
+            </div>
+            <div>
+                <h3>Quantum computing for nonlinear problems</h3>
+                <p> For several significant classes of nonlinear PDEs, including Hamilton-Jacobi equations and scalar nonlinear hyperbolic equations, we map the underlying nonlinear PDEs in (d+1)-dimensions to linear PDEs of at most (2d+1)-dimensions using the level set formalism. We can then solve these linear PDEs -- whose dimension is at most twice that of the original nonlinear PDE -- on a quantum computer without losing any physical information. This procedure is exact, meaning no approximations are made, and serves as an example of the linear representation method for nonlinear PDEs.</p>
+                <h3>Analog quantum algorithms</h3>
+                <p>Analog information in the quantum regime is commonly referred to as continuous-variable (CV) quantum information. We apply Schrödingerization to directly map D-dimensional linear PDEs onto a (D+1)-qumode quantum system, enabling analog or continuous-variable Hamiltonian simulation on (D+1) qumodes. This methodology eliminates the need to discretize the PDEs beforehand and is applicable not only to linear PDEs but also to certain nonlinear PDEs and systems of nonlinear ordinary differential equations (ODEs).  </p>
+            </div>
+        </div>
+        <section id="research">
+        <h2>Funding Support</h2>
+        
+         <div class="member-info">
+            <h3>1. "Quantum algorithms for Ordinary Differential Equations", NSFC, 2024--2028. </h3>
+            <h3>2. "Quantum computing for Partial Differential Equations", SJTU 2030 Initiative and the Fundamental Research Funds for the Central Universities, 2023--2026. </h3>
+            <h3>3. "Quantum Machine Learning and Quantum Internet", The Science and Technology Program of Shanghai, China,2021--2024. </h3>
+             
+        </div> 
+        
+    </section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <ol reversed>
+         <li><strong>Shi Jin, Nana Liu, Yue Yu, <a href="https://arxiv.org/abs/2407.15895">Quantum Circuits for the heat equation with physical boundary conditions via Schrödingerisation, </a></strong> <em>2024, preprint. </em></li>
+        <li><strong>Shi Jin, Nana Liu, <a href="https://arxiv.org/abs/2407.01913">Analog quantum simulation of parabolic partial differential equations using Jaynes-Cummings-like models, </a></strong> <em>2024,preprint.</em></li>
+        <li><strong>Shi Jin, Nana Liu, Yue Yu,  <a href="https://arxiv.org/abs/2404.13585">Quantum simulation of the Fokker-Planck equation via Schrödingerization, </a></strong> <em>2024, preprint.</em></li>
+        <li><strong>Shi Jin, Nana Liu and Chuwen Ma, <a href="https://arxiv.org/abs/2403.19123">Schrödingerisation based computationally stable algorithms for ill-posed problems in partial differential equations, </a></strong> <em>2024, preprint.</em></li>    
+        <li><strong>Junpeng Hu, Shi Jin, Nana Liu, Lei Zhang, <a href="https://arxiv.org/abs/2403.10032">Quantum Circuits for partial differential equations via Schrödingerisation, </a></strong> <em>2024, preprint.</em></li>
+        <li><strong>Shi Jin, Nana Liu, Yue Yu, <a href="https://arxiv.org/abs/2402.14696">Quantum simulation of the Fokker-Planck equation via Schrödingerization, </a></strong> <em>2024, preprint.</em></li>
+         <li><strong>Shi Jin, Nana Liu and Chuwen Ma, <a href="https://arxiv.org/abs/2402.14696">On Schrödingerization based quantum algorithms for linear dynamical systems with inhomogeneous terms,  </a></strong> <em>2024, preprint.</em></li>   
+         <li><strong>Yu Cao, Shi Jin and Nana Liu,<a href="https://arxiv.org/abs/2312.02817">Quantum simulation for time-dependent Hamiltonians -- with applications to non-autonomous ordinary and partial differential equations, </a></strong> <em>2024, preprint.</em></li>
+         <li><strong>Francois Golse, Shi Jin and Nana Liu, <a href="https://arxiv.org/abs/2209.11220">Quantum algorithms for uncertainty quantification: application to partial differential equations, </a></strong> <em>2024, preprint</em></li> 
+        <li><strong>Shi Jin, Nana Liu, Chuwen Ma, <a href="https://arxiv.org/abs/2308.08408">Quantum simulation of Maxwell's equations via Schrödingersation, </a></strong> <em>Math. Model Num. Anal., to appear.</em></li>  
+        <li><strong>Shi Jin and Nana Liu, <a href="https://arxiv.org/abs/2308.00646">Analog quantum simulation of partial differential equations, </a></strong> <em>Quantum Sci. Tech., to appear</em></li>
+        <li><strong>Junpeng Hu, Shi Jin, Lei Zhang, <a href="http://arxiv.org/abs/2307.03858">Quantum algorithms for multiscale partial differential equations, </a></strong> <em>(SIAM) Multiscale Model. Simulation, to appear.</em></li>
+        <li><strong>Shi Jin and Nana Liu, <a href="https://arxiv.org/abs/2304.02865">Quantum simulation of discrete linear dynamical systems and simple iterative methods in linear algebra via Schrodingerisation, </a></strong> <em>Proc. Royal Soc. London A, 480, 20230370, 2024</em></li>
+        <li><strong>Shi Jin, Xiantao Li, Nana Liu and Yue Yu, <a href="https://arxiv.org/abs/2304.00667v1">Quantum Simulation for Quantum Dynamics with Artificial Boundary Condition,</a></strong> <em>SIAM Journal on Scientific Computing, 2024.</em></li>
+        <li><strong>Shi Jin and Nana Liu, <a href="http://arxiv.org/pdf/2202.07834">Quantum algorithms for nonlinear partial differential equations, </a></strong> <em>Bull. Math. Sci., 194，103457， 2024.</em></li>
+        <li><strong>Shi Jin,Xiantao Li, Nana Liu,Yue Yu, <a href="https://doi.org/10.1016/j.jcp.2023.112707">Quantum Simulation for Partial Differential Equations with Physical Boundary or Interface Conditions.,</a></strong> <em>Journal of Computational Physics, Vol 498, 112707, 2024.</em></li>
+        <li><strong> Shi Jin, Xiantao Li, <a href="https://arxiv.org/abs/2109.07987">A Partially Random Trotter Algorithm for Quantum Hamiltonian Simulations,</a></strong> <em>Communications on Applied Mathematics and Computation, 2023.</em></li>
+          <li><strong> Shi Jin, Nana Liu and Yue Yu, <a href="https://ins.sjtu.edu.cn/people/shijin/PS/PRA-JLY.pdf">Quantum simulation of partial differential equations: Applications and detailed analysis, </a></strong> <em>Phys. Rev. A 108 (2023), no. 3, Paper No. 032603.</em></li>
+        <li><strong> Shi Jin, Nana Liu and Yue Yu, <a href="https://arxiv.org/abs/2212.13969">Quantum simulation of partial differential equations via Schrödingerisation, </a></strong> <em> 2022, preprint.</em></li>
+         <li><strong>Xiaoyang He, Shi Jin and Yue Yu, <a href="https://ins.sjtu.edu.cn/people/shijin/PS/QC-transport.pdf"> Time complexity analysis of quantum difference methods for the multiscale transport equations, </a></strong> <em>East Asian J. Appl. Math., 13, p717-739, 2023. (A special issue on the occasion of the 60th birthday of Prof. Tao Tang).</em></li>
+         <li><strong> Shi Jin, Nana Liu and Yue Yu, <a href="http://arxiv.org/pdf/2202.04537">Time complexity analysis of quantum difference methods for linear high dimensional and multiscale partial differential equations, </a></strong> <em>J. Comp. Phys.  471,  Paper No. 111641, 2022.</em></li>
+        <li><strong> Shi Jin, Xiantao Li and Nana Liu, <a href="https://doi.org/10.22331/q-2022-06-17-739">On quantum algorithms for the Schrödinger equation in the semi-classical regime, </a></strong> <em> Quantum 6, 739 2022. </em></li> 
+    </ol>
+    </section>
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="columns">
+            <div class="member-info">
+            <h3><a href="https://ins.sjtu.edu.cn/people/shijin/#publications">Shi Jin</a></h3>
+            <p> Chair Professor, SJTU.</p>
+        </div>
+           <div class="member-info">
+            <h3><a href="https://nanaliu.weebly.com/">Nana Liu</a></h3>
+            <p>Associate Professor, SJTU.</p>
+        </div> 
+            <div class="member-info">
+            <h3><a href="https://ins.sjtu.edu.cn/people/lzhang/home.html">Lei Zhang</a></h3>
+            <p>Professor, SJTU.</p>
+        </div>
+            <div class="member-info">
+            <h3><a href="https://yucaoyc.github.io/">Yu Cao</a></h3>
+            <p>Associate Professor, SJTU.</p>
+        </div>
+            <div class="member-info">
+            <h3><a href="https://math.xtu.edu.cn/info/1010/3992.htm">Yue Yu</a></h3>
+            <p>Associate Professor, XTU</p>
+        </div>
+            <div class="member-info">
+            <h3><a href="https://ins.sjtu.edu.cn/peoples/Ma%20Chuwen">Chuwen Ma</a></h3>
+            <p>Postdoctor, SJTU.</p>
+        </div>
+            <div class="member-info">
+            <h3><a href="https://ins.sjtu.edu.cn/peoples/weiwei">Wei Wei</a></h3>
+            <p>Postdoctor, SJTU.</p>
+        </div>
+            <div class="member-info">
+            <h3><a href="https://ins.sjtu.edu.cn/peoples/guanjiao">Anjiao Gu</a></h3>
+            <p>Postdoctor, SJTU.</p>
+        </div>
+            <div class="member-info">
+            <h3><a href="https://ins.sjtu.edu.cn/peoples/hujunpeng">Junpeng Hu</a></h3>
+            <p>Ph.D. Student, SJTU.</p>
+        </div>
+            <div class="member-info">
+            <h3>Xiaoyang He</h3>
+            <p>Ph.D. Student, SJTU.</p>
+        </div>
+            <div class="member-info">
+            <h3>Chundan Zhang</h3>
+            <p>Ph.D. Student, SJTU.</p>
+        </div>
+             <div class="member-info">
+            <h3>Chundan Zhang</h3>
+            <p>Ph.D. Student, SJTU.</p>
+        </div>
+            <div class="member-info">
+            <h3>Shuyi Zhang</h3>
+            <p>Ph.D. Student, SJTU.</p>
+        </div>
+            <div class="member-info">
+            <h3>Xu Yin</h3>
+            <p>Visitor, SXU.</p>
+            <!-- More team members entries can be added in similar divs -->
+        </div>
+    </section>
+    <footer>
+        <p>Contact information: shijin-m@sjtu.edu.cn</p>
+    </footer>
+</body>
+</html>
